@@ -5,7 +5,7 @@ podTemplate(containers: [
 
     node(POD_LABEL) {
         stage('Get a Maven project') {
-//             git 'https://github.com/DelphineN/SpringDemo.git'
+            git 'https://github.com/DelphineN/Spring-Boot-Sample-Project.git'
             container('maven') {
                 stage('Build a Maven project') {
                     sh 'mvn clean package'
