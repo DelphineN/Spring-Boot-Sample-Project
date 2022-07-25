@@ -8,6 +8,7 @@ podTemplate(containers: [
             git 'https://github.com/DelphineN/Spring-Boot-Sample-Project.git'
             container('maven') {
                 stage('Build a Maven project') {
+                    sh 'ls -ahl'
                     sh 'mvn clean package'
                 }
             }
